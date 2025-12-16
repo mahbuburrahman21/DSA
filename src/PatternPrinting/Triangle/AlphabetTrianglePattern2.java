@@ -1,15 +1,15 @@
-package PatternPrinting.NumberAlphabetPattern;
+package PatternPrinting.Triangle;
 import java.util.Scanner;
 
 //Left Lower Triangle pattern
-public class AlphabetTrianglePattern1 {
+public class AlphabetTrianglePattern2 {
     static void main(String[] args) {
         Scanner input = new Scanner(System.in);
         int row = input.nextInt();
 
         for (int i = 1; i <= row; i++) {
-            for (int j = 0; j < i; j++) {
-                System.out.print((char)(j+'A')+"  ");
+            for (int j = 1; j <= i; j++) {
+                System.out.print((char)(i+64)+"  ");
             }
             System.out.println();
         }
@@ -18,7 +18,7 @@ public class AlphabetTrianglePattern1 {
 
 //        input -> 5
 //        A
-//        A  B
-//        A  B  C
-//        A  B  C  D
-//        A  B  C  D  E
+//        B  B
+//        C  C  C
+//        D  D  D  D
+//        E  E  E  E  E

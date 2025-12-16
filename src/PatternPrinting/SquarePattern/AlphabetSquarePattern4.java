@@ -1,4 +1,4 @@
-package PatternPrinting.NumberAlphabetPattern;
+package PatternPrinting.SquarePattern;
 
 import java.util.Scanner;
 

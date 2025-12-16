@@ -1,4 +1,4 @@
-package PatternPrinting.NumberAlphabetPattern;
+package PatternPrinting.Triangle;
 import java.util.Scanner;
 
 //Left Lower Triangle pattern
