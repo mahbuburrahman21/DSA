@@ -2,7 +2,7 @@ package PatternPrinting.SpecialTriangle;
 
 import java.util.Scanner;
 
-public class BinaryTriangle {
+public class BinaryTriangleMasterApproach {
     static void main(String[] args) {
         Scanner input = new Scanner(System.in);
         int n = input.nextInt();
@@ -10,7 +10,11 @@ public class BinaryTriangle {
 
         for (int i = 1; i <= n; i++) {
             for (int j = 1; j <= i; j++) {
-                System.out.print((i+j+1)%2+"  ");
+                if ((i+j)%2!=0){
+                    System.out.print("0"+"  ");
+                } else {
+                    System.out.print("1"+"  ");
+                }
             }
             System.out.println();
         }
