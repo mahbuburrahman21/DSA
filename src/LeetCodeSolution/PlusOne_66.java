@@ -1,7 +1,7 @@
 package LeetCodeSolution;
 import Arrays.ArrayUtility;
 
-import java.util.ArrayList;
+
 public class PlusOne_66 {
     static void main(String[] args) {
         //int[] digits = {1,2,3};
@@ -9,7 +9,7 @@ public class PlusOne_66 {
         //int[] digits = {9,9,9,9};
         int[] digits = {9,8,7,6,5,4,3,2,1,0};
         int[] ar = plusOne(digits);
-        //ArrayUtility.displayArray(ar);
+        ArrayUtility.displayArray(ar);
     }
     public static int[] plusOne(int[] digits) {
         int n = digits.length;
