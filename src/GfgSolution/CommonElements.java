@@ -10,11 +10,11 @@ public class CommonElements {
         int[] b={6,1,1,4,4,2,8};
         int n=a.length;
         int m=b.length;
-        Arrays.sort(a);
-        Arrays.sort(b);
+        Arrays.sort(a); // O(nlog(n))
+        Arrays.sort(b); // O(mlog(n))
         int i = 0;
         int j = 0;
-        while (i<n && j<m){
+        while (i<n && j<m){ // O(m+n)
             if (a[i]== b[j]){
                 ans.add(a[i]);
                 i++;

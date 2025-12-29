@@ -8,7 +8,8 @@ public class SelectionSort {
 
 
         //Sort the array in ascending order.
-        int[] arr = {7,4,5,9,8,3,2};
+        //int[] arr = {7,4,5,9,8,3,2};
+        int[] arr = {7,3,4,7,8,1};
         int n = arr.length;
         for (int i = 0; i < n-1; i++) {
             int min = i;
@@ -37,7 +38,6 @@ public class SelectionSort {
             }
         }
         System.out.println(Arrays.toString(arr1));
-
 
 
     }
