@@ -1,42 +1,40 @@
 void main() {
-    //int[] arr = {1,2,7,3,5,6,1,8,4,9};
-    int[] arr = {3,2,4};
+    int[] arr = {1,2,3,3,3,3,5,6,7,8,8,8,9};
+    //int[] arr = {3,2,4};
     //Arrays.sort(arr); //{ 1,1,2,3,4,5,6,7,8,9 }
-    //System.out.println(Arrays.toString(arr));
-    int target = 6;
-    System.out.println(Arrays.toString(twoSum(arr, target)));
+    System.out.println(upperBoundTargetExist(arr,3));
+    System.out.println(lowerBoundTargetExist(arr,3));
 
 }
-//public static int[] twoSum(int[] num, int target) {
-//    int n = num.length;
-//    int[] arr = new int[2];
-//    for(int i = 0; i<n; i++){
-//        for(int j = i+1; j<n; j++){
-//            if((num[i]+num[j]== target)){
-//                arr[0] = i;
-//                arr[1] = j;
-//                return arr;
-//            }
-//        }
-//    }
-//    return arr;
-//}
-public static int[] twoSum(int[] num, int target) {
-    int n = num.length;
-    int[] arr = new int[2];
-    //Arrays.sort(num);
-    int i=0;
-    int j = n-1;
-    while (i<j){
-        System.out.printf("i -> %d\nj -> %d\nsum of i and j index = %d\n\n", i,j,num[i]+num[j]);
-        if (num[i]+num[j] == target){
-            arr[0] = i;
-            arr[1] = j;
-            return arr;
+
+public static int upperBoundTargetExist(int[] arr, int tar){
+    int start = 0;
+    int end = arr.length-1;
+    int index = -1;
+    while (start <= end){
+        int mid = (start+end)/2;
+        if (arr[mid] < tar) start = mid+1;
+        else if (arr[mid] > tar) end = mid-1;
+        else {
+            index = mid;
+            start = mid+1;
         }
-        if (num[i]+num[j]>target){
-            j--;
-        } else i++;
     }
-    return null;
+    return index;
+}
+
+public static int lowerBoundTargetExist(int[] arr, int tar){
+    int start = 0;
+    int end = arr.length-1;
+    int index = -1;
+    while (start <= end){
+        int mid = (start+end)/2;
+        if (arr[mid] < tar) start = mid+1;
+        else if (arr[mid] > tar) end = mid-1;
+        else {
+            index = mid;
+            end = mid-1;
+        }
+    }
+    return index;
 }
