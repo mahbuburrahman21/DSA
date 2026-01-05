@@ -2,13 +2,22 @@ package LeetCodeSolution;
 
 public class SingleElementInASortedArray_540 {
     static void main(String[] args) {
-        //int[] arr = {1,1,2,3,3,4,4,8,8};
-        int[] arr = {1,1,2,2,3,3,4,5,5,6,6};
-        //int[] arr = {3,3,7,7,10,10,11,11,12,12,24,24,56,56,100};
-        //int[] arr = {3,3,7,7,10,11,11};
-        //int[] arr = {7,7,10,11,11,12,12};
-        //int[] arr = {3};
-        System.out.println(singleNonDuplicate(arr));
+        int[] arr1 = {1,1,2,3,3,4,4,8,8};
+        int[] arr2 = {1,1,2,2,3,3,4,5,5,6,6};
+        int[] arr3 = {3,3,7,7,10,10,11,11,12,12,24,24,56,56,100};
+        int[] arr4 = {3,3,7,7,10,11,11};
+        int[] arr5 = {7,7,10,11,11,12,12};
+        int[] arr6 = {3};
+        int[] arr7 = {1,1,3};
+        int[] arr8 = {1,3,3};
+        System.out.println("arr1 -> " + singleNonDuplicate(arr1));
+        System.out.println("arr2 -> " + singleNonDuplicate(arr2));
+        System.out.println("arr3 -> " + singleNonDuplicate(arr3));
+        System.out.println("arr4 -> " + singleNonDuplicate(arr4));
+        System.out.println("arr5 -> " + singleNonDuplicate(arr5));
+        System.out.println("arr6 -> " + singleNonDuplicate(arr6));
+        System.out.println("arr7 -> " + singleNonDuplicate(arr7));
+        System.out.println("arr8 -> " + singleNonDuplicate(arr8));
     }
     public static int singleNonDuplicate(int[] arr) {
 
