@@ -1,6 +1,6 @@
 package LeetCodeSolution;
 
-public class SearchInRotatedSortedArray_33 {
+public class SearchInRotatedSortedArray_33_apr1 {
     static void main(String[] args) {
         int[] arr1 = {3,4,5,6,7,8,9,0,1,2};
         int[] arr2 = {0,1,2,3};
