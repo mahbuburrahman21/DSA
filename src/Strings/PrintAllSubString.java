@@ -2,7 +2,7 @@ package Strings;
 
 public class PrintAllSubString {
     static void main(String[] args) {
-        String str = "gopi";
+        String str = "mahbub";
         for (int i = 0; i < str.length(); i++) {
             for (int j = i+1; j <= str.length() ; j++) {
                 System.out.print(str.substring(i,j)+" ");
