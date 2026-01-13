@@ -1,0 +1,33 @@
+package _2DArrays;
+
+public class PrintMatrixInSnakePattern {
+    static void main(String[] args) {
+        int[][] arr = {{2,8,3,4,7},{7,2,1,6,3},{5,5,4,1,4},{3,1,8,2,6}};
+        int row = arr.length;
+        int col = arr[0].length;
+        for (int i = 0; i < row; i++) {
+            if (i%2 != 0) {
+//                int j = col - 1;
+//                while (j>=0){
+//                    System.out.print(arr[i][j]+"  ");
+//                    j--;
+//                }
+                for (int j = col-1; j >= 0; j--) {
+                    System.out.print(arr[i][j]+"  ");
+                }
+            }
+            else {
+//                int j = 0;
+//                while (j < col){
+//                    System.out.print(arr[i][j]+"  ");
+//                    j++;
+//                }
+                for (int j = 0; j < col; j++) {
+                    System.out.print(arr[i][j]+"  ");
+                }
+            }
+            System.out.println();
+
+        }
+    }
+}
