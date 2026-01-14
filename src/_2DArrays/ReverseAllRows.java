@@ -2,7 +2,7 @@ package _2DArrays;
 
 public class ReverseAllRows {
     static void main() {
-        int[][] arr = {{2,8,3,4,7},{7,2,1,6,3},{5,5,4,1,4},{3,1,8,2,6}};
+        int[][] arr = {{5,1,9,11},{2,4,8,10},{13,3,6,7},{15,14,12,16}};
         int row = arr.length;
         int col = arr[0].length;
         int flag = col/2;
@@ -18,7 +18,7 @@ public class ReverseAllRows {
         }
         for (int[] ints : arr) {
             for (int j = 0; j < col; j++) {
-                System.out.print(ints[j] + "  ");
+                System.out.print(ints[j] + "   ");
             }
             System.out.println();
         }
