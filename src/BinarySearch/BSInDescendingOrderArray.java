@@ -1,4 +1,4 @@
-package Searching;
+package BinarySearch;
 
 public class BSInDescendingOrderArray {
     static void main(String[] args) {

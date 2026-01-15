@@ -1,4 +1,4 @@
-package Searching;
+package BinarySearch;
 
 public class lowerAndUpperBoundWhenTargetExistOrNot {
     static void main(String[] args) {
