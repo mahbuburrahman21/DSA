@@ -1,7 +1,7 @@
 package LeetCodeSolution;
 
 public class SearchA2DMatrix_II_240 {
-    static void main(String[] args) {
+    static void main() {
         int[][] matrix = {{1,4,7,11,15},{2,5,8,12,19},{3,6,9,16,22},{10,13,14,17,24},{18,21,23,26,30}};
         //int[][] matrix = {{1,4},{2,5}};
         //int potentialRow = findingPotentialRow(matrix, 20);
