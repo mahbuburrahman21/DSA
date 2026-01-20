@@ -1,10 +1,8 @@
 package SortingMethods;
-
-import GfgSolution.WaveArray;
 import java.util.Arrays;
 
 public class SelectionSort {
-    static void main(String[] args) {
+    static void main() {
 
 
         //Sort the array in ascending order.
@@ -17,7 +15,7 @@ public class SelectionSort {
                 if (arr[j]<arr[min]) min = j;
             }
             if (min != i) {
-                WaveArray.swap(arr, i, min);
+                swap(arr, i, min);
             }
         }
         System.out.println(Arrays.toString(arr));
@@ -34,11 +32,15 @@ public class SelectionSort {
                 if (arr1[j]>arr1[max]) max = j;
             }
             if (max != i) {
-                WaveArray.swap(arr1, i, max);
+                swap(arr1, i, max);
             }
         }
         System.out.println(Arrays.toString(arr1));
 
-
+    }
+    private static void swap(int[] arr, int i, int j){
+        int temp = arr[i];
+        arr[i] = arr[j];
+        arr[j] = temp;
     }
 }

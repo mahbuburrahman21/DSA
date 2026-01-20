@@ -1,7 +1,7 @@
 package LeetCodeSolution;
 
 public class Segregate0sAnd1s_gfg {
-    static void main(String[] args) {
+    static void main() {
         int[] nums = {0,1,0,1,0,0,1};
         moveZeroes(nums);
         System.out.print("{ ");
@@ -22,7 +22,7 @@ public class Segregate0sAnd1s_gfg {
             } else j++;
         }
     }
-    public static void swap(int[] nums ,int i, int j){
+    private static void swap(int[] nums ,int i, int j){
         int temp = nums[i];
         nums[i] = nums[j];
         nums[j] = temp;

@@ -1,12 +1,9 @@
 package SortingMethods;
-
-import GfgSolution.WaveArray;
-
 import java.util.ArrayList;
 import java.util.Arrays;
 
 public class InsertionSort {
-    static void main(String[] args) {
+    static void main() {
         int[] arr = {4,1,17,31,9,2,0,8,6};
         ArrayList<Integer> adnan = new  ArrayList<>();
         adnan.add(100);
@@ -19,11 +16,17 @@ public class InsertionSort {
         for (int i = 1; i < arr.length; i++) {
             int j = i;
             while (j>0 && arr[j]<arr[j-1]){
-                WaveArray.swap(arr, j, j-1);
+                swap(arr, j, j-1);
                 j--;
             }
         }
         System.out.println(Arrays.toString(arr));
         System.out.println(adnan);
+    }
+
+    private static void swap(int[] arr, int i, int j){
+        int temp = arr[i];
+        arr[i] = arr[j];
+        arr[j] = temp;
     }
 }

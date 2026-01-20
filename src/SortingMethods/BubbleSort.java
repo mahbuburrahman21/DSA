@@ -1,10 +1,8 @@
 package SortingMethods;
-
-import GfgSolution.WaveArray;
 import java.util.Arrays;
 
 public class BubbleSort {
-    static void main(String[] args){
+    static void main(){
         int[] arr = {5,2,4,1,3,3,8,9,1,2,1,7,6};
         //BubbleSort 1st approach
         int n = arr.length;
@@ -13,7 +11,7 @@ public class BubbleSort {
             int j =1;
             for (int l = 0; l < n-k-1; l++) {
                 if (arr[i]>arr[j]){
-                    WaveArray.swap(arr, i, j);
+                    swap(arr, i, j);
                 }
                 i++;
                 j++;
@@ -29,7 +27,7 @@ public class BubbleSort {
         for (int i = 0; i < x-1; i++) {
             for (int j = 0; j < x-1-i; j++) {
                 if (arr1[j] > arr1[j+1]){
-                    WaveArray.swap(arr1, j, j+1);
+                    swap(arr1, j, j+1);
                 }
             }
         }
@@ -52,7 +50,7 @@ public class BubbleSort {
              if (isSored) break;
             for (int j = 0; j < m-1-i; j++) {
                 if (arr2[j] > arr2[j+1]){
-                    WaveArray.swap(arr2, j, j+1);
+                    swap(arr2, j, j+1);
                 }
             }
         }
@@ -67,7 +65,7 @@ public class BubbleSort {
             int swaps = 0;
             for (int j = 0; j < p-1-i; j++) {
                 if (arr3[j] > arr3[j+1]){
-                    WaveArray.swap(arr3, j, j+1);
+                    swap(arr3, j, j+1);
                     swaps++;
                 }
             }
@@ -85,7 +83,7 @@ public class BubbleSort {
             boolean isSorted = true;
             for (int j = 0; j < q-1-i; j++) {
                 if (arr4[j] > arr4[j+1]){
-                    WaveArray.swap(arr4, j, j+1);
+                    swap(arr4, j, j+1);
                     isSorted = false;
                 }
             }
@@ -103,7 +101,7 @@ public class BubbleSort {
             boolean isSorted = true;
             for (int j = 0; j < r-1-i; j++) {
                 if (arr5[j] < arr5[j+1]){
-                    WaveArray.swap(arr5, j, j+1);
+                    swap(arr5, j, j+1);
                     isSorted = false;
                 }
             }
@@ -121,7 +119,7 @@ public class BubbleSort {
             boolean isSorted = true;
             for (int j = 0; j < s-1-i; j++) {
                 if (arr6[j] < arr6[j+1]){
-                    WaveArray.swap(arr6, j, j+1);
+                    swap(arr6, j, j+1);
                     isSorted = false;
                 }
             }
@@ -138,7 +136,7 @@ public class BubbleSort {
             boolean isSorted = true;
             for (int j = 0; j < t-1-i; j++) {
                 if (arr7[j] == 0){
-                    WaveArray.swap(arr7, j, j+1);
+                    swap(arr7, j, j+1);
                     isSorted = false;
                 }
             }
@@ -146,6 +144,12 @@ public class BubbleSort {
         }
         System.out.println(Arrays.toString(arr7));
 
+    }
+
+    private static void swap(int[] arr, int i, int j){
+        int temp = arr[i];
+        arr[i] = arr[j];
+        arr[j] = temp;
     }
 }
 //System.out.printf("swap -> %d, %d\n\n", arr[j], arr[i]);

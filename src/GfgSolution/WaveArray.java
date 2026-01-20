@@ -3,7 +3,7 @@ package GfgSolution;
 import Arrays.ArrayUtility;
 
 public class WaveArray {
-    static void main(String[] args) {
+    static void main() {
         int[] arr = {1,2,3,4,5};
         int[] arr1 = {1};
         int[] arr2 = {2,34,56,78,122,234,566,778,890};
@@ -29,7 +29,7 @@ public class WaveArray {
         }
     }
 
-    public static void swap(int[] arr, int i, int j){
+    private static void swap(int[] arr, int i, int j){
         int temp = arr[i];
         arr[i] = arr[j];
         arr[j] = temp;

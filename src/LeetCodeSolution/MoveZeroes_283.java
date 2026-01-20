@@ -1,7 +1,7 @@
 package LeetCodeSolution;
 
 public class MoveZeroes_283 {
-    static void main(String[] args) {
+    static void main() {
         int[] nums = {0,1,0,2,3,0,12};
         moveZeroes(nums);
         System.out.print("{ ");
@@ -22,7 +22,7 @@ public class MoveZeroes_283 {
             } else j++;
         }
     }
-    public static void swap(int[] nums ,int i, int j){
+    private static void swap(int[] nums ,int i, int j){
         int temp = nums[i];
         nums[i] = nums[j];
         nums[j] = temp;
