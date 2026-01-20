@@ -2,7 +2,7 @@ package Recursion;
 
 import java.util.ArrayList;
 
-public class FirstOccurrence {
+public class FirstAndLastOccurrence_apr1 {
     static void main() {
         //int[] arr = {1,4,6,7,7,7,7,7,7,23,45,67,67,67,67,67,67,89,99,100};
         //int[] arr = {5, 7, 7, 7, 8, 8, 8, 8};
@@ -21,6 +21,11 @@ public class FirstOccurrence {
         return list;
     }
 
+
+    //This approach is not optimized and also it not a true Binary search.
+    //Binary Search guaranteed logarithmic Time Complexity.
+    //But in this program Worst Case Time complexity will be O(n) --> {1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1}
+    //So the while loop will travel through the almost half of the array.
     public static int lowerBound(int[] nums, int target, int start, int end) {
         if(start > end) return -1;
         int mid = start + (end -  start)/2;
@@ -38,6 +43,10 @@ public class FirstOccurrence {
     }
 
 
+    //This approach is not optimized and also it not a true Binary search.
+    //Binary Search guaranteed logarithmic Time Complexity.
+    //But in this program Worst Case Time complexity will be O(n) --> {1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1}
+    //So the while loop will travel through the almost half of the array.
     public static int upperBound(int[] nums, int target, int start, int end) {
         if(start > end) return -1;
         int mid = start + (end -  start)/2;
