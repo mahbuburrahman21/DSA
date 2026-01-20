@@ -3,7 +3,7 @@ package BinarySearch;
 import java.util.Scanner;
 
 public class BinarySearchFirstOccurrence {
-    static void main(String[] args) {
+    static void main() {
         Scanner input = new Scanner(System.in);
         System.out.print("Enter the target value to find in array: ");
         int target = input.nextInt();
