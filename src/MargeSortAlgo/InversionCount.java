@@ -31,9 +31,26 @@ public class InversionCount {
         //Step-4: Now marge a and b. (a,b is already sorted)
         merge(a,b,arr);
     }
+    //This merger can be more optimized with this technique
+    private static void merge(int[] a, int[] b, int[] c) {
+        int i = 0, j = 0, k = 0;
 
-    //This method marge two sorted Array
-    private static void merge(int[] a, int[] b, int[] c){
+        // Inversion count
+        while (i < a.length && j < b.length) {
+            if (a[i] <= b[j]) {
+                c[k++] = a[i++];
+            } else {
+                count += (a.length - i); // this is counting the inversion
+                c[k++] = b[j++];
+            }
+        }
+
+        while (i < a.length) c[k++] = a[i++];
+        while (j < b.length) c[k++] = b[j++];
+    }
+
+    //This method show how merge method are counting the inversions.
+    private static void mergeInversionProcess(int[] a, int[] b, int[] c){
         //Inversion Count ==========start ===============
         int l=0, m=0; // l -> i, m -> j
         while (true){
