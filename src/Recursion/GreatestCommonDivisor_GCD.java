@@ -1,7 +1,7 @@
 package Recursion;
 
 public class GreatestCommonDivisor_GCD {
-    static void main(String[] args) {
+    static void main() {
         int a = 13;
         int b = 41;
         int gcd = 0;
@@ -15,14 +15,14 @@ public class GreatestCommonDivisor_GCD {
     }
 
     // Inefficient code T.C. = O(a)
-    public static int gcd(int a, int b, int gcd,int i){
+    private static int gcd(int a, int b, int gcd,int i){
         if (i > a) return gcd;
         if (a % i == 0 && b % i == 0) gcd = i;
         return gcd(a,b,gcd,i+1);
     }
 
     // Optimized code
-    public static int hcf(int a, int b){ // gcd and hcf is the same thing
+    private static int hcf(int a, int b){ // gcd and hcf is the same thing
         //if (b%a == 0) return a;
         if (a == 0) return b;
         return hcf(b%a,a);
