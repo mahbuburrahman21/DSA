@@ -1,7 +1,7 @@
 package LinkedList.TraverseLinkedList;
 
 public class TraverseAndPrintList {
-    public static void display(Node head){
+    private static void display(Node head){
         Node temp = head;
         while (temp.next != null){
             System.out.print(temp.val+" ");
@@ -11,7 +11,7 @@ public class TraverseAndPrintList {
     }
 
     //Display Linked List using recursion
-    public static void displayRec(Node head){
+    private static void displayRec(Node head){
         if (head.next==null) return;
         System.out.print(head.val+" "); // print left to right
         displayRec(head.next);
