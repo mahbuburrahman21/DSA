@@ -1,4 +1,4 @@
-package LinkedList.TraverseLinkedList;
+package LinkedList.SinglyLinkedList.TraverseLinkedList;
 
 public class Node {
     int val; //Default value = 0

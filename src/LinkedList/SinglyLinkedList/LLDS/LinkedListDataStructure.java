@@ -1,4 +1,4 @@
-package LinkedList.LLDS;
+package LinkedList.SinglyLinkedList.LLDS;
 
 public class LinkedListDataStructure {
     static void main() {

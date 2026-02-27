@@ -1,4 +1,4 @@
-package LinkedList.LLDS;
+package LinkedList.SinglyLinkedList.LLDS;
 
 public class LinkedLists { // User defined Data Structure
     Node head;
@@ -103,9 +103,6 @@ public class LinkedLists { // User defined Data Structure
         if (idx == size-1) tail = temp; //We are deleting tail
         size--;
     }
-
-
-
 }
 
 

@@ -1,4 +1,4 @@
-package LinkedList.TraverseLinkedList;
+package LinkedList.SinglyLinkedList.TraverseLinkedList;
 
 public class TraverseAndPrintList {
     private static void display(Node head){

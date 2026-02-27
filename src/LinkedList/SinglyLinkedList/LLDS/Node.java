@@ -1,4 +1,4 @@
-package LinkedList.LLDS;
+package LinkedList.SinglyLinkedList.LLDS;
 
 public class Node { //User defined Data Type
     int val;

@@ -1,4 +1,4 @@
-package LinkedList.CreateLinkedList;
+package LinkedList.SinglyLinkedList.CreateLinkedList;
 
 class Node{
     int val; //Default value = 0
