@@ -57,5 +57,4 @@ void main() throws Exception{
     //st.pop();
     System.out.println("popped element -> "+st.pop()+"\n");
     st.display();
-
 }
