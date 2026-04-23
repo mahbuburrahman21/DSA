@@ -51,6 +51,7 @@ public class Implementation {
         kThLevel(a,level,k);
         System.out.println(levelOrder(a));
         System.out.println(zigzagLevelOrder(a));
+        System.out.println(Paths(a));
     }
 
     private static void kThLevel(Node root, int level, int k) {
@@ -187,5 +188,24 @@ public class Implementation {
         System.out.print(root.val+" ");
         display(root.left); // This will print all the value from left of the root
         display(root.right); // This will print all the value from right of the root
+    }
+
+    //All root to leaf paths:
+    private static ArrayList<ArrayList<Integer>> Paths(Node root) {
+        ArrayList<ArrayList<Integer>> ans = new ArrayList<>();
+        ArrayList<Integer> list = new ArrayList<>();
+        rootToLeaf(ans, root, list);
+        return ans;
+    }
+    private static void rootToLeaf(ArrayList<ArrayList<Integer>> ans, Node root, ArrayList<Integer> list) {
+        if (root==null) return;
+        list.add(root.val);
+        if(root.left==null && root.right==null){
+            ArrayList<Integer> copy = new ArrayList<>(list);
+            ans.add(copy);
+        }
+        rootToLeaf(ans, root.left, list);
+        rootToLeaf(ans, root.right, list);
+        list.removeLast();
     }
 }
