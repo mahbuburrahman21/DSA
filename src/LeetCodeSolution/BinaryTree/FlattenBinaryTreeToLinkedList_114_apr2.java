@@ -15,3 +15,4 @@ public class FlattenBinaryTreeToLinkedList_114_apr2 {
         temp.right = RST;
     }
 }
+//Commit check
