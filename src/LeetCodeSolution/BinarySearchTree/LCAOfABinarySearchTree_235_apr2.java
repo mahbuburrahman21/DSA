@@ -2,6 +2,8 @@ package LeetCodeSolution.BinarySearchTree;
 
 public class LCAOfABinarySearchTree_235_apr2 {
     //Iterative approach. O(1) extra space solution.
+    //Time complexity O(h) --> here h is the recursion stack or tree height
+
     public TreeNode lowestCommonAncestor(TreeNode root, TreeNode p, TreeNode q) {
         TreeNode curr = root;
         while(true){
