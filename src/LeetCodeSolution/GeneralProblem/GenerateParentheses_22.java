@@ -11,7 +11,7 @@ public class GenerateParentheses_22 {
         //System.out.println(list);
         return list;
     }
-    public static void helper(String s,List<String> list, int leftCount, int rightCount,int n){
+    private static void helper(String s,List<String> list, int leftCount, int rightCount,int n){
         if (rightCount == n) {
             list.add(s);
             return;
