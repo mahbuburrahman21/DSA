@@ -1,6 +1,6 @@
 package LeetCodeSolution.BinarySearchTree;
 
-public class ValidateBinarySearchTree_98_apr {
+public class ValidateBinarySearchTree_98_apr2 {
 
     public boolean isValidBST(TreeNode root) {
         return checkBST(root, Long.MIN_VALUE, Long.MAX_VALUE);
